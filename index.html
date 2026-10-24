@@ -153,11 +153,11 @@ body[data-skin="glass-light"] .mode{background:linear-gradient(150deg,rgba(255,2
 /* Warm & modern */
 body[data-skin="glass"]{--bg:#15100d;--label:#fbf2e9;--label2:#bba99a;--sep:rgba(255,200,160,.14);
   --card:linear-gradient(150deg,rgba(255,190,140,.14),rgba(255,160,120,.05) 60%,rgba(255,200,150,.09));
-  --green:#4cc38a;--green-d:#8be8b9;--orange:#f4a24a;--orange-d:#ffc88a;--blue:#ffb27a;--onaccent:#2a1208;--fill:rgba(255,190,140,.10);--glass:rgba(21,16,13,.84);
+  --green:#4cc38a;--green-d:#8be8b9;--orange:#f4a24a;--orange-d:#ffc88a;--blue:var(--acd);--onaccent:#2a1208;--fill:rgba(255,190,140,.10);--glass:rgba(21,16,13,.84);
   background-color:#15100d;background-image:radial-gradient(60% 38% at 8% 0%,rgba(255,150,80,.24),transparent 72%),radial-gradient(55% 40% at 100% 100%,rgba(235,90,110,.17),transparent 72%);background-attachment:fixed}
 body[data-skin="glass-light"]{--bg:#fbf4ec;--label:#2b1d15;--label2:#7a6659;--sep:rgba(120,70,40,.14);
   --card:linear-gradient(150deg,rgba(255,255,255,.95),rgba(255,236,218,.62));
-  --green:#2f9e6b;--green-d:#1d7a4f;--orange:#e8892a;--orange-d:#9a5200;--blue:#c4562b;--onaccent:#ffffff;--fill:rgba(200,110,60,.10);--glass:rgba(251,244,236,.88);--shadow:0 8px 22px rgba(150,80,40,.12);
+  --green:#2f9e6b;--green-d:#1d7a4f;--orange:#e8892a;--orange-d:#9a5200;--blue:var(--acl);--onaccent:#ffffff;--fill:rgba(200,110,60,.10);--glass:rgba(251,244,236,.88);--shadow:0 8px 22px rgba(150,80,40,.12);
   background-color:#fbf4ec;background-image:radial-gradient(60% 38% at 8% 0%,rgba(255,170,110,.30),transparent 72%),radial-gradient(55% 40% at 100% 100%,rgba(240,120,130,.16),transparent 72%);background-attachment:fixed}
 body[data-skin="glass"] h1{background:linear-gradient(180deg,#fff3e6,#ffae72);-webkit-background-clip:text;background-clip:text;color:transparent}
 body[data-skin="glass-light"] h1{background:linear-gradient(180deg,#e8763f,#9b3a14);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -170,8 +170,8 @@ body[data-skin="glass"] .search,body[data-skin="glass"] .seg{background:linear-g
 body[data-skin="glass"] .seg button[aria-pressed="true"]{background:linear-gradient(150deg,rgba(255,190,140,.46),rgba(255,140,90,.26));box-shadow:inset 0 1px 0 rgba(255,235,215,.4),0 2px 6px rgba(0,0,0,.3)}
 body[data-skin="glass-light"] .search,body[data-skin="glass-light"] .seg{background:linear-gradient(150deg,rgba(255,255,255,.85),rgba(255,224,200,.5));border:1px solid rgba(255,255,255,.95);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(190,100,50,.12)}
 body[data-skin="glass-light"] .seg button[aria-pressed="true"]{background:linear-gradient(150deg,#fff,rgba(255,205,165,.75));box-shadow:inset 0 1px 0 #fff,0 2px 6px rgba(150,80,40,.22)}
-body[data-skin="glass"] .btn{background:linear-gradient(150deg,#ffb27a,#e9753f);color:#2a1208;border:1px solid rgba(255,220,190,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.4)}
-body[data-skin="glass-light"] .btn{background:linear-gradient(150deg,#ee7d45,#c4562b);color:#fff;border:1px solid rgba(255,255,255,.7);box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+body[data-skin="glass"] .btn{background:linear-gradient(150deg,var(--acd),#e9753f);color:#2a1208;border:1px solid rgba(255,220,190,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.4)}
+body[data-skin="glass-light"] .btn{background:linear-gradient(150deg,#ee7d45,var(--acl));color:#fff;border:1px solid rgba(255,255,255,.7);box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
 body[data-skin="glass"] .btn.sec{background:linear-gradient(150deg,rgba(255,190,140,.16),rgba(255,170,120,.06));color:var(--blue)}
 body[data-skin="glass-light"] .btn.sec{background:linear-gradient(150deg,rgba(255,255,255,.85),rgba(255,224,200,.5));color:var(--blue)}
 body[data-skin="glass"] .sheet{background:rgba(26,19,15,.93)}body[data-skin="glass-light"] .sheet{background:rgba(255,247,240,.96)}
@@ -185,8 +185,8 @@ body[data-skin="glass-light"] .mode{background:linear-gradient(150deg,rgba(255,2
 .badge i{position:relative;font-style:normal;font-size:14px;font-weight:700;margin-top:-1px}
 .b5,.b4{--bc:var(--green)}.b3{--bc:#9ac95a}.b2,.b1,.b0{--bc:var(--orange)}
 /* Überrasch mich */
-.surp{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:10px 18px;border-radius:999px;font-size:15px;font-weight:600;background:linear-gradient(150deg,#ffb27a,#e9753f);color:#2a1208;box-shadow:0 6px 16px rgba(233,117,63,.35),inset 0 1px 0 rgba(255,255,255,.45)}
-body[data-skin="glass-light"] .surp{background:linear-gradient(150deg,#ee7d45,#c4562b);color:#fff;box-shadow:0 6px 16px rgba(196,86,43,.35),inset 0 1px 0 rgba(255,255,255,.5)}
+.surp{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:10px 18px;border-radius:999px;font-size:15px;font-weight:600;background:linear-gradient(150deg,var(--acd),#e9753f);color:#2a1208;box-shadow:0 6px 16px rgba(233,117,63,.35),inset 0 1px 0 rgba(255,255,255,.45)}
+body[data-skin="glass-light"] .surp{background:linear-gradient(150deg,#ee7d45,var(--acl));color:#fff;box-shadow:0 6px 16px rgba(196,86,43,.35),inset 0 1px 0 rgba(255,255,255,.5)}
 .surp:active{transform:scale(.97)}.surp:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
 .item.flash{animation:fl 1.4s ease-out}@keyframes fl{0%{background:color-mix(in srgb,var(--blue) 35%,transparent)}100%{background:transparent}}
 
@@ -199,10 +199,10 @@ body[data-skin="glass-light"] .group,body[data-skin="glass-light"] .pick,body[da
 body[data-skin="glass"] .sheet{background:#1d1613}body[data-skin="glass-light"] .sheet{background:#fffaf5}
 body[data-skin="glass"] .search,body[data-skin="glass"] .seg{background:#2a211c;border:0;box-shadow:none}
 body[data-skin="glass-light"] .search,body[data-skin="glass-light"] .seg{background:#f1e8de;border:0;box-shadow:none}
-body[data-skin="glass"] .seg button[aria-pressed="true"]{background:#ffb27a;color:#2a1208;box-shadow:none}
+body[data-skin="glass"] .seg button[aria-pressed="true"]{background:var(--acd);color:#2a1208;box-shadow:none}
 body[data-skin="glass-light"] .seg button[aria-pressed="true"]{background:#fff;color:#2b1d15;box-shadow:0 0 0 1px #e6d8c9}
-body[data-skin="glass"] .btn{background:#ffb27a;color:#2a1208;border:0;box-shadow:none}
-body[data-skin="glass-light"] .btn{background:#c4562b;color:#fff;border:0;box-shadow:none}
+body[data-skin="glass"] .btn{background:var(--acd);color:#2a1208;border:0;box-shadow:none}
+body[data-skin="glass-light"] .btn{background:var(--acl);color:#fff;border:0;box-shadow:none}
 body[data-skin="glass"] .btn.sec{background:#2f2520;color:var(--blue);box-shadow:none}
 body[data-skin="glass-light"] .btn.sec{background:#f1e8de;color:var(--blue);box-shadow:none}
 body[data-skin="glass"] .tabs{background:#171210;border-top:1px solid rgba(255,255,255,.08)}
@@ -211,22 +211,34 @@ body[data-skin="glass"] .mode{background:#2a211c;border:0;box-shadow:none}
 body[data-skin="glass-light"] .mode{background:#f1e8de;border:0;box-shadow:none}
 body::before{background:var(--bg)!important}
 .sbar{background:var(--bg)!important}
-.surp{box-shadow:none!important;background:#ffb27a!important;color:#2a1208!important}
-body[data-skin="glass-light"] .surp{background:#c4562b!important;color:#fff!important}
+.surp{box-shadow:none!important;background:var(--acd)!important;color:#2a1208!important}
+body[data-skin="glass-light"] .surp{background:var(--acl)!important;color:#fff!important}
 .badge svg{filter:none}
-body[data-skin="glass"] h1{background:none;color:#ffb27a;-webkit-text-fill-color:#ffb27a}
-body[data-skin="glass-light"] h1{background:none;color:#c4562b;-webkit-text-fill-color:#c4562b}
+body[data-skin="glass"] h1{background:none;color:var(--acd);-webkit-text-fill-color:var(--acd)}
+body[data-skin="glass-light"] h1{background:none;color:var(--acl);-webkit-text-fill-color:var(--acl)}
 
 /* Kopfbereich */
 .hero{box-sizing:border-box;position:relative;overflow:hidden;border-radius:26px;margin-top:10px;padding:14px 0 14px 18px;min-height:120px;display:flex;align-items:center}
-body[data-skin="glass"] .hero{background:#2d211b;--ac:#ffb27a;--pl:#3d2e26;--pr:#57443a}
-body[data-skin="glass-light"] .hero{background:#fbe6d6;--ac:#c4562b;--pl:#ffffff;--pr:#f0cdb3}
+body[data-skin="glass"] .hero{background:var(--hd);--ac:var(--acd);--pl:#3d2e26;--pr:color-mix(in srgb,var(--acd) 28%,#3d2e26)}
+body[data-skin="glass-light"] .hero{background:var(--hl);--ac:var(--acl);--pl:#ffffff;--pr:color-mix(in srgb,var(--acl) 25%,#ffffff)}
 .surp{margin-top:16px}
 .ht{position:relative;z-index:1;max-width:58%}.slg{margin:2px 0 0;font-size:13.500px;line-height:1.3;color:var(--ac);opacity:.9;font-weight:500}
 .hero h1{font-size:34px;line-height:1.1;margin:0;padding:0 0 4px;position:relative;z-index:1}
 .plate{position:absolute;right:4px;top:50%;width:116px;height:116px;transform:translateY(-50%)}
 .pl-dot{fill:var(--ac);opacity:.22}.pl-p{fill:var(--pl)}.pl-r{fill:none;stroke:var(--pr);stroke-width:3}
 .pl-h{fill:var(--ac)}.pl-c{fill:none;stroke:var(--ac);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+
+:root{--acd:#ffb27a;--acl:#c4562b;--hd:#2d211b;--hl:#fbe6d6}
+body[data-season="spring"]{--acd:#9be08a;--acl:#3b8a3a;--hd:#1f2a1d;--hl:#e4f3dc}
+body[data-season="summer"]{--acd:#ffd36b;--acl:#b57600;--hd:#2d2716;--hl:#fff1c4}
+body[data-season="halloween"]{--acd:#ff9a3c;--acl:#d9480f;--hd:#2a1b33;--hl:#efe3fa}
+body[data-season="lateautumn"]{--acd:#e88f9a;--acl:#a3283f;--hd:#2e1a1e;--hl:#f6dde0}
+body[data-season="xmas"]{--acd:#e9c46a;--acl:#1f6b45;--hd:#17281f;--hl:#dcefe2}
+body[data-season="winter"]{--acd:#8cc8ff;--acl:#2a6fb0;--hd:#1a2430;--hl:#dfeefb}
+.mo{display:none}
+.mo-fill{fill:var(--ac)}.mo-line{fill:none;stroke:var(--ac);stroke-width:3.500;stroke-linecap:round}.mo-cut{fill:var(--pl)}
+body[data-season="spring"] .m-leaf,body[data-season="autumn"] .m-leaf,body[data-season="summer"] .m-sun,body[data-season="winter"] .m-flake,body[data-season="halloween"] .m-pump,body[data-season="xmas"] .m-star{display:block}
+body[data-season="halloween"] .pl-h,body[data-season="xmas"] .pl-h{display:none}
 </style>
 </head>
 <body>
@@ -239,6 +251,11 @@ body[data-skin="glass-light"] .hero{background:#fbe6d6;--ac:#c4562b;--pl:#ffffff
     <circle class="pl-p" cx="80" cy="82" r="50"/>
     <circle class="pl-r" cx="80" cy="82" r="37"/>
     <path class="pl-h" d="M80 103s-21-12.500-26.500-26C49.500 66.500 55 57 64 57c6 0 11 3 16 8.500C85 60 90 57 96 57c9 0 14.500 9.500 10.500 20C101 90.500 80 103 80 103z"/>
+    <g class="mo m-leaf"><path class="mo-fill" d="M110 44c0-14 12-22 26-20 2 14-6 26-22 24z"/><path class="mo-cut" d="M114 42c6-8 12-12 20-14-8 6-12 12-14 18z" opacity=".5"/></g>
+    <g class="mo m-sun"><circle class="mo-fill" cx="124" cy="34" r="9"/><path class="mo-line" d="M124 16v5M124 47v5M106 34h5M137 34h5M111 21l4 4M133 43l4 4M137 21l-4 4M115 43l-4 4"/></g>
+    <g class="mo m-flake"><path class="mo-line" d="M124 20v28M112 27l24 14M136 27l-24 14"/></g>
+    <g class="mo m-pump"><ellipse class="mo-fill" cx="80" cy="87" rx="30" ry="24"/><path class="mo-line" d="M80 63c0-6 2-9 7-12"/><path class="mo-cut" d="M64 80l7-9 7 9zM82 80l7-9 7 9zM62 95q18 15 36 0l-6-3-6 5-6-5-6 5-6-5z"/></g>
+    <g class="mo m-star"><path class="mo-fill" d="M80 54l8.500 18.500 20 2-15 13 5 20L80 98 61.500 107.500l5-20-15-13 20-2z"/></g>
     <g class="pl-c"><path d="M14 36v22a8 8 0 0 0 16 0V36M22 36v24M22 66v62"/></g>
     <g class="pl-c"><path d="M146 128V40c-9 4-14 18-14 34 0 8 4 12 14 12"/></g>
   </svg></div>
@@ -258,7 +275,7 @@ body[data-skin="glass-light"] .hero{background:#fbe6d6;--ac:#c4562b;--pl:#ffffff
     <p><b>Eher meiden:</b> Rostbraten, Schweinshaxe, Wurst- und Schinkenbretter, Käsespätzle, Rahmsoßen, Cordon bleu, Schnitzel mit Pommes, Frittiertes.</p>
     <p>Bewertung nach den Beschreibungen auf den Karten, keine Nährwertanalyse und kein Ersatz für ärztlichen Rat. Karten ändern sich, vor Ort gilt die aktuelle.</p>
   </details>
-  <div class="brand"><svg class="mlogo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><linearGradient id="mgl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B1A7FF"/><stop offset="1" stop-color="#6170FF"/></linearGradient><linearGradient id="mgr" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#80EAD6"/><stop offset="1" stop-color="#4FA9F6"/></linearGradient></defs><rect width="1024" height="1024" fill="#13202E"/><g transform="translate(512 512) scale(2.6) translate(-239.5 -226)"><polygon points="117,122 117,330 240,256" fill="url(#mgl)"/><polygon points="362,122 362,330 240,256" fill="url(#mgr)"/></g></svg><span><b>MIDA <i>Studios</i></b> · Version 1.1 · Okt. 2026</span></div>
+  <div class="brand"><svg class="mlogo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><linearGradient id="mgl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B1A7FF"/><stop offset="1" stop-color="#6170FF"/></linearGradient><linearGradient id="mgr" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#80EAD6"/><stop offset="1" stop-color="#4FA9F6"/></linearGradient></defs><rect width="1024" height="1024" fill="#13202E"/><g transform="translate(512 512) scale(2.6) translate(-239.5 -226)"><polygon points="117,122 117,330 240,256" fill="url(#mgl)"/><polygon points="362,122 362,330 240,256" fill="url(#mgr)"/></g></svg><span><b>MIDA <i>Studios</i></b> · Version 1.2 · Okt. 2026</span></div>
 </div>
 <nav class="tabs" aria-label="Bereiche">
   <button class="tab" type="button" aria-current="true" id="tList"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg>Lokale</button>
@@ -356,6 +373,16 @@ function skin(m){
   var tc=document.querySelector('meta[name="theme-color"]');if(tc)tc.setAttribute("content",m==="light"?"#fbf4ec":"#15100d");
 }
 $("modeBtn").addEventListener("click",function(){mode=mode==="light"?"dark":"light";try{localStorage.setItem("ek-mode",mode)}catch(e){}skin(mode)});
+function seasonOf(d){var m=d.getMonth()+1,t=d.getDate();
+  if((m===10&&t>=20)||(m===11&&t<=1))return "halloween";
+  if((m===12&&t>=6)||(m===1&&t<=6))return "xmas";
+  if(m===2||(m===1&&t>6))return "winter";
+  if(m>=3&&m<=5)return "spring";
+  if(m>=6&&m<=8)return "summer";
+  if(m===9||(m===10&&t<20))return "autumn";
+  return "lateautumn"}
+function setSeason(k){document.body.setAttribute("data-season",k==="auto"?seasonOf(new Date()):k)}
+setSeason("auto");
 skin(mode);
 render();
 </script>
