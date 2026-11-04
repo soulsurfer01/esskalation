@@ -7,6 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="EssKalation">
 <meta name="theme-color" content="#0d1220">
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" href="icon-512.png">
 
@@ -316,7 +317,7 @@ body[data-skin] .loc{color:var(--c-ac)!important}
     <p><b>Eher meiden:</b> Rostbraten, Schweinshaxe, Wurst- und Schinkenbretter, Käsespätzle, Rahmsoßen, Cordon bleu, Schnitzel mit Pommes, Frittiertes.</p>
     <p>Bewertung nach den Beschreibungen auf den Karten, keine Nährwertanalyse und kein Ersatz für ärztlichen Rat. Karten ändern sich, vor Ort gilt die aktuelle.</p>
   </details>
-  <div class="brand"><svg class="mlogo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><linearGradient id="mgl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B1A7FF"/><stop offset="1" stop-color="#6170FF"/></linearGradient><linearGradient id="mgr" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#80EAD6"/><stop offset="1" stop-color="#4FA9F6"/></linearGradient></defs><rect width="1024" height="1024" fill="#13202E"/><g transform="translate(512 512) scale(2.6) translate(-239.5 -226)"><polygon points="117,122 117,330 240,256" fill="url(#mgl)"/><polygon points="362,122 362,330 240,256" fill="url(#mgr)"/></g></svg><span><b>MIDA <i>Studios</i></b> · Version 1.7 · Okt. 2026</span></div>
+  <div class="brand"><svg class="mlogo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><linearGradient id="mgl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B1A7FF"/><stop offset="1" stop-color="#6170FF"/></linearGradient><linearGradient id="mgr" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#80EAD6"/><stop offset="1" stop-color="#4FA9F6"/></linearGradient></defs><rect width="1024" height="1024" fill="#13202E"/><g transform="translate(512 512) scale(2.6) translate(-239.5 -226)"><polygon points="117,122 117,330 240,256" fill="url(#mgl)"/><polygon points="362,122 362,330 240,256" fill="url(#mgr)"/></g></svg><span><b>MIDA <i>Studios</i></b> · Version 1.8 · Okt. 2026</span></div>
 </div>
 <nav class="tabs" aria-label="Bereiche">
   <button class="tab" type="button" aria-current="true" id="tList"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg>Lokale</button>
@@ -430,5 +431,6 @@ setSeason("auto");
 skin(mode);
 render();
 </script>
+<script>if(!window.__sw){window.__sw=1;document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a.swl");if(!a)return;e.preventDefault();fetch(a.getAttribute("href"),{cache:"no-cache"}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(h){var d=new DOMParser().parseFromString(h,"text/html"),s=document.querySelector("style"),ns=d.querySelector("style");document.title=d.title;if(s&&ns)s.textContent=ns.textContent;document.body.innerHTML=d.body.innerHTML;Array.prototype.forEach.call(document.body.querySelectorAll("script"),function(o){var n=document.createElement("script");n.textContent=o.textContent;o.parentNode.replaceChild(n,o)});window.scrollTo(0,0)}).catch(function(){location.href=a.href})})}</script>
 </body>
 </html>
